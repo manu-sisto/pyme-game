@@ -7,6 +7,11 @@ function App() {
     <div>
       <Board></Board>
       <br/>
+    </div>
+  );
+}
+/* 
+
       <div className="grid-container">
         <div className="grid-item grid-item-1">item 1</div>
         <div className="grid-item grid-item-2">item 2</div>
@@ -20,8 +25,5 @@ function App() {
         <div className="grid-item grid-item-10">item 10</div>
       </div>
     
-    </div>
-  );
-}
-
+*/
 export default App;

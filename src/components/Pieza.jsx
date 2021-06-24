@@ -2,7 +2,8 @@ import React from "react";
 
 const Pieza = () => {
     let estilo= {
-        display: "grid"
+        display: "grid",
+        justifyContent: "center"
     }
 
     return (

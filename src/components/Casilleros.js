@@ -1,12 +1,16 @@
-const arrayDeObjetos = [
+
+const jugador = { nombre: "Manuel", capital: 200, salud: 100 };
+
+const arrayDeCasilleros = [
     {
       ubicacion: 1,
       nombre: "uno",
       color: "red",
       pieza: false,
       tipo: "superior",
-      info: "En este casillero paso X cosa",
-      className: "grid-idem-1"
+      info: "diste el primer paso, ganaste 100 pesos",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-1"
     },
     {
       ubicacion: 2,
@@ -14,8 +18,9 @@ const arrayDeObjetos = [
       color: "blue",
       pieza: false,
       tipo: "superior",
-      info: "En este casillero paso X cosa",
-      className: "grid-idem-2"
+      info: "diste el segundo paso, ganaste 100 pesos",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-2"
     },
     {
       ubicacion: 3,
@@ -23,8 +28,9 @@ const arrayDeObjetos = [
       color: "purple",
       pieza: false,
       tipo: "superior",
-      info: "En este casillero paso X cosa",
-      className: "grid-idem-3"
+      info: "diste el tercer paso, ganaste 100 pesos",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-3"
     },
     {
       ubicacion: 4,
@@ -32,8 +38,9 @@ const arrayDeObjetos = [
       color: "yellow",
       pieza: false,
       tipo: "superior",
-      info: "En este casillero paso X cosa",
-      className: "grid-idem-4"
+      info: "diste el cuarto paso, ganaste 100 pesos",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-4"
     },
     {
       ubicacion: 5,
@@ -42,7 +49,8 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa",
-      className: "grid-idem-5"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-5"
     },
     {
       ubicacion: 6,
@@ -51,7 +59,8 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa, ubicacion 6",
-      className: "grid-idem-6"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-6"
     },
     {
       ubicacion: 7,
@@ -60,7 +69,8 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa, ubicacion 7",
-      className: "grid-idem-7"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-7"
     },
     {
       ubicacion: 8,
@@ -69,7 +79,8 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa",
-      className: "grid-idem-8"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-8"
     },
     {
       ubicacion: 9,
@@ -78,7 +89,8 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa",
-      className: "grid-idem-9"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-9"
     },
     {
       ubicacion: 10,
@@ -87,8 +99,69 @@ const arrayDeObjetos = [
       pieza: false,
       tipo: "superior",
       info: "En este casillero paso X cosa",
-      className: "grid-idem-10"
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-10"
+    },
+    {
+      ubicacion: 11,
+      nombre: "once",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-11"
+    },
+    {
+      ubicacion: 12,
+      nombre: "doce",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-12"
+    },
+    {
+      ubicacion: 13,
+      nombre: "trece",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-13"
+    },
+    {
+      ubicacion: 14,
+      nombre: "catorce",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-14"
+    },
+    {
+      ubicacion: 15,
+      nombre: "quince",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-15"
+    },
+    {
+      ubicacion: 16,
+      nombre: "dieciseis",
+      color: "white",
+      pieza: false,
+      tipo: "superior",
+      info: "En este casillero paso X cosa",
+      evento: (jugador) => jugador.capital + 100,
+      className: "grid-item-16"
     }
   ];
 
-  export default arrayDeObjetos
+  export {arrayDeCasilleros, jugador};

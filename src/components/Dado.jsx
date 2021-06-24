@@ -17,7 +17,7 @@ const Dado = (props) => {
       >
         tira el dado!
       </button>
-      <p>resultado: {props.numero}</p>
+      <p>resultado del dado: {props.numero}</p>
     </div>
   );
 };

@@ -7,6 +7,7 @@ const Cartel = (props) => {
       <div className="cartel">
         <h3>casillero numero: {props.lugar}</h3>
         <p>{props.texto}</p>
+        <p>tu capital es: {props.capital}</p>
         <button  onClick={() => {
             props.setearActivo("cartel-inactivo");
         }}>aceptar</button>

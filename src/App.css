@@ -2,9 +2,28 @@
   text-align: center;
 }
 body {
-  background: #ee9b9b;
+  background: #f2fbff;
   margin: 0px;
   min-width: 1075px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+}
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .casilleroViejo {
@@ -39,39 +58,10 @@ body {
   border-spacing: 3px;
   margin: 25px;
   float: left;
-}
-
-.board-center {
-  width: 560px;
-  border: none;
-  vertical-align: bottom;
-  background-repeat: no-repeat;
-  background-size: auto 40px;
-}
-
-.board-corner {
-  width: 102px;
-  height: 102px;
-}
-
-.board-top {
-  width: 72px;
-  height: 102px;
-}
-
-.board-bottom {
-  width: 72px;
-  height: 102px;
-}
-
-.board-left {
-  width: 102px;
-  height: 72px;
-}
-
-.board-right {
-  width: 102px;
-  height: 72px;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(250, 178, 119);
 }
 
 .cartel-inactivo {
@@ -102,71 +92,112 @@ body {
   transition: visibility 0.5s, opacity 0.5s;
   visibility: visible;
   opacity: 1;
+  padding: 20px;
 }
 
 .cartel {
   background-color: #d6d3d3;
-  width: 30%;
+  width: 40%;
   height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 2px;
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: repeat(4, 100px);
-	grid-template-rows: auto;
-	grid-gap: 10px;
-	border: 2px solid black;
-	width: min-content;
-	margin: 10px;
-	padding: 10px;
-	grid-template-areas: 
-		"up1 up2 up3 up4"
-		"left . . right"
-		"down1 down2 down3 down4";
+  background-color: teal;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  border: 2px solid black;
+  width: min-content;
+  margin: 10px;
+  padding: 10px;
+  grid-template-areas:
+    "up1 up2 up3 up4"
+    "left4 . . right1"
+	"left3 . . right2"
+	"left2 . . right3"
+	"left1 . . right4"
+    "down1 down2 down3 down4";
 }
 
 .grid-item {
-	border: 2px solid black;
-	background-color: blue;
-	width: 100px;
-    height: 100px;
-	display: grid;
-	text-align: center;
+  border: 2px solid black;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  text-align: center;
 }
 
 .grid-item-1 {
-	grid-area: up1;
+  grid-area: up1;
+  background: skyblue;
 }
 .grid-item-2 {
-	grid-area: up2;
+  grid-area: up2;
+  background-color: white;
 }
 .grid-item-3 {
-	grid-area: up3;
+  grid-area: up3;
+  background: skyblue;
 }
 .grid-item-4 {
-	grid-area: up4;
+  grid-area: up4;
+  background-color: white;
 }
 .grid-item-5 {
-	grid-area: right;
+  grid-area: right1;
+  background: skyblue;
 }
 .grid-item-6 {
-	grid-area: down1;
+  grid-area: right2;
+  background-color: white;
 }
 .grid-item-7 {
-	grid-area: down2;
+  grid-area: right3;
+  background: skyblue;
 }
 .grid-item-8 {
-	grid-area: down3;
+  grid-area: right4;
+  background-color: white;
 }
 .grid-item-9 {
-	grid-area: down4;
+  grid-area: down4;
+  background: skyblue;
 }
 .grid-item-10 {
-	grid-area: left;
+  grid-area: down3;
+  background-color: white;
 }
-
+.grid-item-11 {
+  grid-area: down2;
+  background-color: skyblue;
+}
+.grid-item-12 {
+  grid-area: down1;
+  background-color: white;
+}
+.grid-item-13 {
+  grid-area: left1;
+  background-color: skyblue;
+}
+.grid-item-14 {
+  grid-area: left2;
+  background-color: white;
+}
+.grid-item-15 {
+  grid-area: left3;
+  background-color: skyblue;
+}
+.grid-item-16 {
+  grid-area: left4;
+  background-color: white;
+}
