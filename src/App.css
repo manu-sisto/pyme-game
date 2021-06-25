@@ -20,10 +20,17 @@ button {
   color: black;
   text-align: center;
   transition: all 0.2s;
+  background-color: rgb(195, 243, 255);
 }
 button:hover {
   color: #000000;
   background-color: #ffffff;
+  border: 0.2em solid rgb(58, 58, 58);
+}
+
+.stats {
+  font-size: medium;
+  font-weight: bold;
 }
 
 .casilleroViejo {
@@ -52,6 +59,12 @@ button:hover {
   align-items: auto;
 }
 */
+
+.dado {
+  width: 40px;
+  height: 40px;
+  vertical-align: bottom;
+}
 
 #board {
   border: 2px solid black;
@@ -120,17 +133,17 @@ button:hover {
   margin: 10px;
   padding: 10px;
   grid-template-areas:
-    "up1 up2 up3 up4"
-    "left4 . . right1"
-	"left3 . . right2"
-	"left2 . . right3"
-	"left1 . . right4"
-    "down1 down2 down3 down4";
+    "up1 up2 up3 up4 up5"
+    "left5 . . . right1"
+    "left4 . . . right2"
+    "left3 . . . right3"
+    "left2 . . . right4"
+    "left1 . . . right5"
+    "down1 down2 down3 down4 down5";
 }
 
 .grid-item {
   border: 2px solid black;
-  background-color: blue;
   width: 100px;
   height: 100px;
   display: grid;
@@ -154,50 +167,134 @@ button:hover {
   background-color: white;
 }
 .grid-item-5 {
-  grid-area: right1;
+  grid-area: up5;
   background: skyblue;
 }
 .grid-item-6 {
-  grid-area: right2;
+  grid-area: right1;
   background-color: white;
 }
 .grid-item-7 {
-  grid-area: right3;
+  grid-area: right2;
   background: skyblue;
 }
 .grid-item-8 {
-  grid-area: right4;
+  grid-area: right3;
   background-color: white;
 }
 .grid-item-9 {
-  grid-area: down4;
+  grid-area: right4;
   background: skyblue;
 }
 .grid-item-10 {
-  grid-area: down3;
+  grid-area: right5;
   background-color: white;
 }
 .grid-item-11 {
-  grid-area: down2;
+  grid-area: down5;
   background-color: skyblue;
 }
 .grid-item-12 {
-  grid-area: down1;
+  grid-area: down4;
   background-color: white;
 }
 .grid-item-13 {
-  grid-area: left1;
+  grid-area: down3;
   background-color: skyblue;
 }
 .grid-item-14 {
-  grid-area: left2;
+  grid-area: down2;
   background-color: white;
 }
 .grid-item-15 {
-  grid-area: left3;
+  grid-area: down1;
   background-color: skyblue;
 }
 .grid-item-16 {
-  grid-area: left4;
+  grid-area: left1;
   background-color: white;
+}
+.grid-item-17 {
+  grid-area: left2;
+  background-color: skyblue;
+}
+.grid-item-18 {
+  grid-area: left3;
+  background-color: white;
+}
+.grid-item-19 {
+  grid-area: left4;
+  background-color: skyblue;
+}
+.grid-item-20 {
+  grid-area: left5;
+  background-color: white;
+}
+
+
+
+
+
+.container {
+  max-width: 200px;
+}
+
+.progressbar-container {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.progressbar-complete {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  background-color: #5225bd;
+  border-radius: 10px;
+  animation: g 2500ms infinite ease-in-out;
+  z-index: 2;
+}
+
+.progressbar-liquid {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  animation: g 2500ms infinite ease-in-out,
+    r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #5225bd;
+  border-radius: 40%;
+}
+.progress {
+  z-index: 2;
+}
+
+@keyframes g {
+  0% {
+    background-color: #5225bd;
+  }
+  50% {
+    background-color: #607e9e;
+  }
+  100% {
+    background-color: #5225bd;
+  }
+}
+
+@keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }

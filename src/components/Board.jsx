@@ -4,6 +4,7 @@ import Dado from "./Dado";
 import Casillero from "./Casillero";
 import Cartel from "./Cartel";
 import {arrayDeCasilleros, jugador} from "./Casilleros";
+import ProgressBar from "./ProgressBar";
 
 
 
@@ -14,10 +15,11 @@ const Board = () => {
  
   return (
     <div id="board">
-      <p>Nombre: {jugador.nombre}</p>
-      <p>Capital: ${jugador.capital}</p>
-      <p>Salud: {jugador.salud}</p>
-      <p>Posicion: {lugar}</p>
+      <p className="stats">Nombre: {jugador.nombre}</p>
+      <p className="stats">Capital: ${jugador.capital}</p>
+      <p className="stats">Salud: {jugador.salud}%</p>
+      <ProgressBar nivel={jugador.salud}></ProgressBar>
+      <p className="stats">Posicion: {lugar}</p>
 
       <Dado
         numero={numero}
