@@ -6,8 +6,6 @@ import Cartel from "./Cartel";
 import {arrayDeCasilleros, jugador} from "./Casilleros";
 import ProgressBar from "./ProgressBar";
 
-
-
 const Board = () => {
   const [numero, setNumero] = useState(0);
   const [lugar, setLugar] = useState(1);
@@ -26,9 +24,7 @@ const Board = () => {
         setearNumero={(num) => {
           setNumero(num);
           setLugar(lugar + num);
-          console.log(jugador.capital)
-          const nuevoCapital = arrayDeCasilleros[lugar].evento(jugador)
-          jugador.capital = nuevoCapital;
+          arrayDeCasilleros[lugar].evento(jugador)
         }}
         setearActivo={(x) => {
           setActivo(x);
