@@ -4,7 +4,7 @@ const Pieza = () => {
 
     return (
     <div>
-        <img src="/assets/pieza1.png" id= "pieza" alt=""/>
+        <img src="./assets/pieza1.png" id= "pieza" alt=""/>
     </div>
     )
 }
