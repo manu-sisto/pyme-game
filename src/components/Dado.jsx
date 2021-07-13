@@ -13,14 +13,14 @@ const Dado = (props) => {
         onClick={() => {
           setTimeout(() => {
             const tirada = tirarDado();
-            props.setearNumero(tirada);
+            props.onTirada(tirada);
             props.setearActivo("cartel-activo");
           }, 500);
         }}
       >
         tira el dado!
       </button>
-      <img className="dado" src="/assets/unnamed.gif" alt="dado girando"/>
+      <img className="dado" src="./assets/dado.gif" alt="dado girando"/>
       <p>resultado del dado: {props.numero}</p>
 
     </div>

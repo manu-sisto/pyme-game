@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "//manu-sisto.github.io/pyme-game/static/css/main.505aaed7.chunk.css",
+    "main.js": "//manu-sisto.github.io/pyme-game/static/js/main.6d927a72.chunk.js",
+    "main.js.map": "//manu-sisto.github.io/pyme-game/static/js/main.6d927a72.chunk.js.map",
+    "runtime-main.js": "//manu-sisto.github.io/pyme-game/static/js/runtime-main.00bb8408.js",
+    "runtime-main.js.map": "//manu-sisto.github.io/pyme-game/static/js/runtime-main.00bb8408.js.map",
+    "static/js/2.79619d5c.chunk.js": "//manu-sisto.github.io/pyme-game/static/js/2.79619d5c.chunk.js",
+    "static/js/2.79619d5c.chunk.js.map": "//manu-sisto.github.io/pyme-game/static/js/2.79619d5c.chunk.js.map",
+    "static/js/3.df4f23dc.chunk.js": "//manu-sisto.github.io/pyme-game/static/js/3.df4f23dc.chunk.js",
+    "static/js/3.df4f23dc.chunk.js.map": "//manu-sisto.github.io/pyme-game/static/js/3.df4f23dc.chunk.js.map",
+    "index.html": "//manu-sisto.github.io/pyme-game/index.html",
+    "static/css/main.505aaed7.chunk.css.map": "//manu-sisto.github.io/pyme-game/static/css/main.505aaed7.chunk.css.map",
+    "static/js/2.79619d5c.chunk.js.LICENSE.txt": "//manu-sisto.github.io/pyme-game/static/js/2.79619d5c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00bb8408.js",
+    "static/js/2.79619d5c.chunk.js",
+    "static/css/main.505aaed7.chunk.css",
+    "static/js/main.6d927a72.chunk.js"
+  ]
+}

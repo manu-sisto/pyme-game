@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 body {
-  background: #f2fbff;
-  margin: 0px;
-  min-width: 1075px;
+  background: linear-gradient(to bottom right, skyblue, white);
+  margin: 0 auto;
+  min-width: 640px;
+  padding-bottom: 50px;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 button {
@@ -33,26 +36,14 @@ button:hover {
   font-weight: bold;
 }
 
-.casilleroViejo {
-  font-size: 12px;
-  font-family: arial, sans-serif;
-  border: 2px solid black;
-  text-align: center;
-  display: flex;
-  margin: 2px;
-  background-color: #d6d3d3;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
 #pieza {
   display: flex;
   width: 20px;
   height: 40px;
   align-self: center;
-  justify-content: flex-start;
-
+  justify-content: center;
+  margin-left: 18px;
+  margin-top: -18px;
 }
 /*
 .linea {
@@ -68,17 +59,16 @@ button:hover {
   vertical-align: bottom;
 }
 
-#board {
-  border: 2px solid black;
-  border-spacing: 3px;
+#cuerpo {
+  border: 4px solid rgb(97, 107, 247);
+  border-radius: 8px;
   margin: 25px;
   float: left;
-  border-radius: 4px;
-  margin: 10px;
   padding: 10px;
-  background-color: rgb(250, 178, 119);
-  width: 80%;
+  background: linear-gradient(to bottom, rgb(48, 154, 196), rgb(226, 251, 253));
+  width: 90%;
 }
+
 
 .cartel-inactivo {
   position: fixed;
@@ -113,8 +103,7 @@ button:hover {
 
 .cartel {
   background-color: #d6d3d3;
-  width: 40%;
-  height: 30%;
+  max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,16 +111,38 @@ button:hover {
   justify-content: space-around;
   border: 2px solid black;
   border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#headerCartel {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+#tituloCartel {
+  width: auto;
+}
+#foto {
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  align-self: center;
+}
+
+.tablero{
+  display: flex;
+  justify-content: center;
 }
 
 .grid-container {
-  background-color: teal;
-  border-radius: 6px;
+  background: radial-gradient(rgb(86, 167, 97),rgb(0, 94, 5));
   display: grid;
   grid-template-columns: repeat(4, 60px);
   grid-template-rows: auto;
   grid-gap: 10px;
-  border: 2px solid black;
+  border: 4px solid rgb(45, 114, 54);
+  border-radius: 8px;
   width: min-content;
   margin: 10px;
   padding: 10px;
@@ -143,95 +154,78 @@ button:hover {
     "left2 . . . right4"
     "left1 . . . right5"
     "down1 down2 down3 down4 down5";
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item {
-  border: 2px solid black;
+  border: 2px solid rgb(38, 102, 46);
   width: 60px;
   height: 60px;
   display: grid;
-  text-align: center;
+  text-align: left;
+  background: radial-gradient(rgb(255, 255, 249) , rgb(126, 202, 231) 95%);
 }
 
 .grid-item-1 {
   grid-area: up1;
-  background: skyblue;
 }
 .grid-item-2 {
   grid-area: up2;
-  background-color: white;
 }
 .grid-item-3 {
   grid-area: up3;
-  background: skyblue;
 }
 .grid-item-4 {
   grid-area: up4;
-  background-color: white;
 }
 .grid-item-5 {
   grid-area: up5;
-  background: skyblue;
 }
 .grid-item-6 {
   grid-area: right1;
-  background-color: white;
 }
 .grid-item-7 {
   grid-area: right2;
-  background: skyblue;
 }
 .grid-item-8 {
   grid-area: right3;
-  background-color: white;
 }
 .grid-item-9 {
   grid-area: right4;
-  background: skyblue;
 }
 .grid-item-10 {
   grid-area: right5;
-  background-color: white;
 }
 .grid-item-11 {
   grid-area: down5;
-  background-color: skyblue;
 }
 .grid-item-12 {
   grid-area: down4;
-  background-color: white;
 }
 .grid-item-13 {
   grid-area: down3;
-  background-color: skyblue;
 }
 .grid-item-14 {
   grid-area: down2;
-  background-color: white;
 }
 .grid-item-15 {
   grid-area: down1;
-  background-color: skyblue;
 }
 .grid-item-16 {
   grid-area: left1;
-  background-color: white;
 }
 .grid-item-17 {
   grid-area: left2;
-  background-color: skyblue;
 }
 .grid-item-18 {
   grid-area: left3;
-  background-color: white;
 }
 .grid-item-19 {
   grid-area: left4;
-  background-color: skyblue;
 }
 .grid-item-20 {
   grid-area: left5;
-  background-color: white;
 }
 
 
